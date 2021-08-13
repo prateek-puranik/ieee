@@ -1,0 +1,57 @@
+.App {
+  display:flex;
+  justify-content:center;
+  
+
+  font-family: 'Nosifer', cursive;
+  align-items: center;
+  height:100%;
+  width:100%;
+  flex-direction:column;
+
+}
+.App input{
+  background-color:green;
+  margin-top:20px;
+  width:300px;
+  height:40px;
+  font-size:20px;
+  margin-bottom:20px;
+  align-items: flex-start;
+
+    padding: 20px; 
+       
+
+  }
+  ::placeholder { 
+    color:yellowgreen;
+    opacity: 1; 
+    
+  }
+ .cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    text-align:center;
+   
+}
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 700px) {
+    .cards{ grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 600px) {
+    .cards{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 800px) {
+    .cards{ grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  
+  @media (min-width: 900px) {
+    .cards{ grid-template-columns: repeat(4, 1fr); }
+  }  
+ 
+
+
